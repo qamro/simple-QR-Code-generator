@@ -73,6 +73,11 @@ I'm keeping the code above as-is for now, but I know it's not perfect. Here's wh
 
 I know how to fix these, I just haven't updated the script yet.
 
+## Sample output
+ 
+I've generated a QR code for my GitHub profile URL (`https://github.com/qamro`) and included it in this repo. Feel free to scan it and check its efficiency/accuracy for yourself.
+
+
 ## License
 
 **MIT License** 
