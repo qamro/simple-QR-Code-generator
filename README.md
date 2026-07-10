@@ -67,12 +67,7 @@ I'm keeping the code above as-is for now, but I know it's not perfect. Here's wh
    img = qr.make_image()
 ```
    This keeps `version=1` as a minimum/starting point, but lets the library grow the grid as large as needed to safely fit whatever URL is entered — so short URLs still get a small, clean QR code, and long URLs automatically get a bigger one instead of failing silently.
-2. **No error handling.** Empty input, invalid paths, or bad permissions will crash the script with a raw traceback instead of a clean error message.
-3. **No `.png` extension check.** If the user doesn't type an extension, saving can fail or guess the wrong format.
-4. **No directory check.** If the user enters a folder path instead of a file path, it crashes with `IsADirectoryError` instead of handling it gracefully (this actually happened to me while testing).
-5. **No CLI arguments.** It only works interactively — there's no way to run it non-interactively with flags like `--url` or `--output`.
- 
-I know how to fix these, I just haven't updated the script yet.
+
 2. **No error handling.** Empty input, invalid paths, or bad permissions will crash the script with a raw traceback instead of a clean error message.
 3. **No `.png` extension check.** If the user doesn't type an extension, saving can fail or guess the wrong format.
 4. **No directory check.** If the user enters a folder path instead of a file path, it crashes with `IsADirectoryError` instead of handling it gracefully (this actually happened to me while testing).
