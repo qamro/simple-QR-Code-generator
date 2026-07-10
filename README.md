@@ -81,6 +81,7 @@ I've generated a QR code for my GitHub profile URL (`https://github.com/qamro`) 
 ## License
 
 **MIT License** 
+
 Do whatever you want with this code. Fork it, fix the gaps above, rewrite it entirely, use it commercially, whatever. No attribution required (though appreciated).
 
 ```
