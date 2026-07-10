@@ -47,9 +47,8 @@ qr = qrcode.QRCode(
 qr.add_data(url)
 img = qr.make_image()
 img.save(file_path)
-print("---------------------------------------------")
+print("------------------------------ QR CODE GENERATOR ------------------------------")
 print(f"QR code generated and saved to {file_path}")
-print("---------------------------------------------")
 ```
 
 ## Known gaps (I'm aware of these)
