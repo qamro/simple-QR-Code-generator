@@ -66,7 +66,7 @@ I'm keeping the code above as-is for now, but I know it's not perfect. Here's wh
    The fix is one line:
 ```python
    qr.add_data(url)
-   qr.make(fit=True)   # <- resizes the grid to match the actual data length
+   qr.make(fit=True)   # resizes the grid to match the actual data length
    img = qr.make_image()
 ```
    This keeps `version=1` as a minimum/starting point, but lets the library grow the grid as large as needed to safely fit whatever URL is entered, so short URLs still get a small, clean QR code, and long URLs automatically get a bigger one instead of failing silently.
